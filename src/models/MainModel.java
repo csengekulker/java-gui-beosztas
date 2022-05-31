@@ -16,4 +16,7 @@ public class MainModel {
         new Position(9, "Szoftverfejlesztő"),
         new Position(10, "Takarító"),
     };
+
+    //convert array to vector
+    public Vector<Position> groupList = new Vector<>(Arrays.asList(positionArray));
 }
