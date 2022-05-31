@@ -1,4 +1,4 @@
-# Java MVC Template
+## Java MVC Template
 
 This is an MVC template to easily create and get started with Java GUI Desktop applications.
 

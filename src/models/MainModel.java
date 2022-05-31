@@ -1,3 +1,13 @@
+/*
+* File: MainModel.java
+* Author: Balogh Csenge
+* Copyright: 2021, Balogh Csenge
+* Group: Szoft_I-N
+* Date: 2022-05-31
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL
+*/
+
 package models;
 
 import java.util.Arrays;
@@ -17,6 +27,5 @@ public class MainModel {
         new Position(10, "Takarító"),
     };
 
-    //convert array to vector
     public Vector<Position> positionVector = new Vector<>(Arrays.asList(positionArray));
 }

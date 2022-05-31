@@ -1,15 +1,27 @@
-package views;
+/*
+* File: MainFrame.java
+* Author: Balogh Csenge
+* Copyright: 2021, Balogh Csenge
+* Group: Szoft_I-N
+* Date: 2022-05-31
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL
+*/
 
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.DefaultListModel;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
+package views;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import javax.swing.JFrame;
+
+import javax.swing.JPanel;
+
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JComboBox;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
 
 public class MainFrame extends JFrame {
   JPanel mainPanel;
@@ -19,7 +31,6 @@ public class MainFrame extends JFrame {
 
   public DefaultListModel<String> defaultListModel;
   public JList<String> positionList;
-
   JScrollPane scrollPane;
 
   public MainFrame() {
@@ -42,9 +53,7 @@ public class MainFrame extends JFrame {
 
   private void setMainPanel() {
     this.mainPanel = new JPanel();
-
     this.mainPanel.setLayout(new BorderLayout());
-
 
     this.mainPanel.add(positionComboBox, BorderLayout.NORTH);
     this.mainPanel.add(scrollPane, BorderLayout.CENTER);
@@ -54,14 +63,9 @@ public class MainFrame extends JFrame {
   private void setFrame() {
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setSize(400, 300);
-    this.setTitle("JAVA GUI TEMPLATE");
+    this.setTitle("Balogh Csenge | Szoft_I_N | 2022.05.31");
     this.setVisible(true);
 
-    // layout for window
-    this.setLayout(
-      new FlowLayout(
-
-      )
-    );
+    this.setLayout(new FlowLayout());
   }
 }
