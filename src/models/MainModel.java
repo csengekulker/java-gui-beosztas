@@ -18,5 +18,5 @@ public class MainModel {
     };
 
     //convert array to vector
-    public Vector<Position> groupList = new Vector<>(Arrays.asList(positionArray));
+    public Vector<Position> positionVector = new Vector<>(Arrays.asList(positionArray));
 }
